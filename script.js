@@ -1,13 +1,10 @@
 //----------Commands------------
 document.addEventListener("keydown",function(event) {
     switch (event.key) {
-        case "Escape":  //Remember prevent at first/index page.
+        case "l":
             event.preventDefault();
-            history.back();
+            document.getElementById("language").click();
             break;
-        case "s":
-            event.preventDefault();
-            this.location.href="index-sv.html";
         case "1":
             event.preventDefault();
             document.getElementById("intro").scrollIntoView();
@@ -19,10 +16,6 @@ document.addEventListener("keydown",function(event) {
         case "3":
             event.preventDefault();
             document.getElementById("websites").scrollIntoView();
-            break;
-        case "c":
-            event.preventDefault();
-            window.location.hash="contact";
             break;
     }
 });
